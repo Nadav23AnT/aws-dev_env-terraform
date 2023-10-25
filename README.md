@@ -64,23 +64,9 @@ After deployment, you can remotely access the EC2 instance from Visual Studio Co
 
 3. Click on the "Remote Explorer" icon in the sidebar.
 
-4. Click the "SSH Targets" icon and choose "Configure SSH Hosts."
+4. "connect to Host" and then Click on the right PUBLIC_IP
 
-5. Add a new SSH configuration with the following format, replacing `<public_ip>` with the actual public IP address from the Terraform output:
-
-   ```json
-   {
-       "label": "AWS Dev Environment",
-       "hostname": "<public_ip>",
-       "username": "ec2-user",
-       "port": 22,
-       "identityFile": "/path/to/your/private-key.pem"
-   }
-   ```
-
-6. Save the configuration.
-
-7. In the "Remote Explorer" panel, you should now see "AWS Dev Environment." Right-click it and select "Connect to Host."
+5. Enjoy development environment on AWS using vscode
 
 You can now access your re-deployable AWS development environment within Visual Studio Code using the "Remote - SSH" extension.
 
