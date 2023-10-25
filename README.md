@@ -1,7 +1,7 @@
 # Re-Deployable AWS Development Environment with Terraform
-![project-dev-terraform](https://github.com/Nadav23AnT/aws-dev_env-terraform/assets/71144691/d1d2374d-0f06-480e-adbe-44e0c15f470c)
-
 This repository provides a simple way to create a re-deployable development environment on AWS using Terraform. With this environment, you can quickly provision AWS resources and launch an EC2 instance that you can access via remote SSH using Visual Studio Code on Windows, Mac, or Linux.
+
+![project-dev-terraform](https://github.com/Nadav23AnT/aws-dev_env-terraform/assets/71144691/d1d2374d-0f06-480e-adbe-44e0c15f470c)
 
 ## Prerequisites
 
