@@ -70,3 +70,22 @@ resource "aws_key_pair" "dev_auth" {
   key_name   = "devssh"
   public_key = file("~/.ssh/devssh.pub")
 }
+
+resource "aws_instance" "dev_node_01" {
+  instance_type          = "t2.micro"
+  ami                    = data.aws_ami.server_ami.id
+  key_name               = aws_key_pair.dev_auth.id
+  vpc_security_group_ids = [aws_security_group.dev-sg-01.id]
+  subnet_id              = aws_subnet.dev-subnet-01.id
+
+  root_block_device {
+    volume_size = 10
+  }
+  tags = {
+    Name = "dev-node"
+  }
+
+
+
+
+}
