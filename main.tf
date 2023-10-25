@@ -77,6 +77,7 @@ resource "aws_instance" "dev_node_01" {
   key_name               = aws_key_pair.dev_auth.id
   vpc_security_group_ids = [aws_security_group.dev-sg-01.id]
   subnet_id              = aws_subnet.dev-subnet-01.id
+  user_data              = file("userdata.tpl")
 
   root_block_device {
     volume_size = 10
