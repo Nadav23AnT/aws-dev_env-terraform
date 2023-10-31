@@ -54,6 +54,7 @@ To deploy the re-deployable AWS development environment, follow these steps:
 
 Once the deployment is complete, Terraform will provide you with information about the resources that were created, including the public IP address of the EC2 instance.
 
+![aws_dev_diagram](https://github.com/Nadav23AnT/aws-dev_env-terraform/assets/71144691/92bcadfc-f1f9-4df8-9d4a-e17618c029b2)
 ## Accessing the EC2 Instance
 
 After deployment, you can remotely access the EC2 instance from Visual Studio Code using the following steps:
